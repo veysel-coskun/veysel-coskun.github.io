@@ -210,6 +210,9 @@ a.card:hover,.card.lift:hover{transform:translateY(-4px);box-shadow:0 16px 34px 
 .tl-y{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
 .tl-e{display:block;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .tl b{display:block;color:var(--ink)}.art .tl p{margin:2px 0 0;color:var(--ink-2)}
+.art .tl li.tl-f{margin-top:10px;padding:14px 16px 14px 16px;background:var(--navy);border-radius:0 6px 6px 0;color:var(--on-navy-3)}
+.tl li.tl-f::before{background:#fff;box-shadow:0 0 0 3px var(--accent)}
+.tl-f .tl-y,.tl-f b{color:#fff}.tl-f .tl-e{color:var(--accent-on-navy)}.art .tl-f p{color:var(--on-navy-3)}
 .art .photo{margin:1.8em 0;font-family:var(--sans)}.photo img{display:block;width:100%;height:auto;border-radius:4px;background:var(--plane)}
 .art .photo figcaption{font-size:.82rem;color:var(--muted);margin-top:8px;line-height:1.45}
 .hz{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;font-size:.88rem;line-height:1.45}
