@@ -2483,3 +2483,4 @@ function packUI(){const $=s=>document.querySelector(s),dlg=$('#dataDlg'),msg=(t,
 (async()=>{const saved=await packLoad();if(saved&&saved.p){try{packStart(saved.p,saved.info);return;}catch(e){console.error('Saved data pack failed; showing demo data',e);await packClear();}}
   packStart(DEMO_PACK,{demo:true});})();
 </script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5e29c569045142739453a0775dbb141f"}'></script>
