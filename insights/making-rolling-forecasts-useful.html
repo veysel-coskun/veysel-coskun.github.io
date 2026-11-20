@@ -30,7 +30,7 @@
 <body>
 <header class="site-head"><div class="wrap"><a class="brand" href="../index.html">Veysel Coşkun</a><nav class="site-nav" aria-label="Main"><a href="../index.html">Home</a><a href="../experience.html">Experience</a><a href="../index.html#ai">AI in Finance</a><a href="../insights/index.html" aria-current="page">Insights</a><a href="../podcast.html">Podcast</a><a href="../templates.html">Templates</a><a href="../resources.html">Resources</a><a href="../contact.html">Contact</a><a class="cta" href="../demo/emea-cockpit.html">Live dashboard</a></nav></div></header>
 <main>
-<div class="page-head"><div class="wrap"><p class="eyebrow">FP&amp;A · 20 January 2026 · 2 min read</p><h1>Making rolling forecasts useful</h1><p>How to keep a rolling forecast focused on decisions, so it does not become one more reporting exercise.</p></div></div>
+<div class="page-head"><div class="wrap"><p class="eyebrow">FP&amp;A · 20 January 2026 · 5 min read</p><h1>Making rolling forecasts useful</h1><p>How to keep a rolling forecast focused on decisions, so it does not become one more reporting exercise.</p></div></div>
 <article class="art">
 <p>When I introduced the first structured budget, long-range plan and rolling forecast cycles for a new business unit, the design choices turned out to matter more than the tool. A rolling forecast can become a monthly reporting burden, or it can become how leaders see around the corner. Here is what makes the difference.</p>
 <h2>Forecast the drivers</h2>
@@ -41,6 +41,48 @@
 <p>If a forecast is treated as a promise, people will protect themselves and sandbag. The budget sets the ambition, and the forecast should be the honest view of where the business is heading. Leaders set the tone by how they react when the forecast moves.</p>
 <h2>Track your accuracy</h2>
 <p>Compare each forecast with what happened, and look for bias. A market that always forecasts high needs a different conversation from one that is simply volatile. Over time this is one of the best ways to improve the quality of a forecast.</p>
+<h2>Design the horizon before the template</h2>
+<p>A rolling forecast always looks the same distance ahead, often 12 to 18 months, so the year-end is never a cliff. The design question is how much detail each part of that horizon deserves. A pattern that works well in consumer goods looks like this:</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Horizon</th><th>Level of detail</th><th>Update</th><th>Main inputs</th></tr></thead><tbody>
+<tr><td><b>Months 1–3</b></td><td>SKU and key customer</td><td>Monthly, weekly in peak season</td><td>Orders, sell-out, promotions, stock positions</td></tr>
+<tr><td><b>Months 4–6</b></td><td>Brand and market</td><td>Monthly</td><td>Customer plans, launches, pricing changes</td></tr>
+<tr><td><b>Months 7–18</b></td><td>Category and region</td><td>Quarterly</td><td>Drivers and trends: market growth, share, inflation, currency</td></tr>
+</tbody></table></div>
+<h2>Build it on a simple driver tree</h2>
+<p>Every line in the forecast should come from a small number of drivers that someone owns. For a branded goods business, net revenue is volume multiplied by list price, less allowances, and variable margin then deducts product cost, royalties and logistics. Each driver has a natural owner and a natural source.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Driver</th><th>Owner</th><th>Typical source</th></tr></thead><tbody>
+<tr><td>Volume</td><td>Sales and demand planning</td><td>Customer orders, sell-out trends, statistical baseline</td></tr>
+<tr><td>List price</td><td>Commercial team</td><td>Price lists and agreed increases</td></tr>
+<tr><td>Allowance rate</td><td>Commercial finance</td><td>Trade terms and promotion plans</td></tr>
+<tr><td>Product cost</td><td>Supply chain and costing</td><td>Supplier quotes, freight, duty, currency</td></tr>
+<tr><td>Royalties and logistics</td><td>Finance</td><td>Contracts and logistics rates</td></tr>
+</tbody></table></div>
+<h2>Give it a fixed monthly rhythm</h2>
+<ol>
+<li><b>Working day 5:</b> actuals are final, and the accuracy of last month's forecast is reviewed.</li>
+<li><b>Working days 6–8:</b> markets and functions update their drivers, explaining every change above an agreed threshold.</li>
+<li><b>Working day 9:</b> a consensus meeting agrees one view, with risks and opportunities listed separately.</li>
+<li><b>Working day 10:</b> the forecast is locked, submitted and compared with the previous version.</li>
+</ol>
+<h2>Show a range, not just one number</h2>
+<p>A single forecast number hides the most useful information: how confident the team is, and what could move it. A better habit is to present the base forecast together with the main risks and opportunities, each sized and owned. That shows leaders a realistic range, and it focuses the discussion on the items the team can influence.</p>
+<p>For bigger uncertainties, such as a major customer contract, a price increase or a currency move, prepare two or three scenarios in advance. The goal is not to predict which one will happen, but to agree beforehand what the business would do in each case. When the uncertainty resolves, the decision has already been discussed, and the team can act in days rather than weeks.</p>
+<p>Keep the scenarios few and distinct. Three well-understood scenarios, each with a trigger that tells the team when it is becoming real, are far more useful than ten variations that nobody remembers by the next meeting.</p>
+<p>Scenarios also make the forecast more honest. When the downside has already been written down and discussed, there is less pressure to leave it out of the base case, and fewer surprises reach leaders late in the year.</p>
+<h2>What leaders should see each month</h2>
+<ul>
+<li>The latest forecast against budget, last forecast and last year, for the full year.</li>
+<li>What changed since the last forecast, and why, in three or four sized drivers.</li>
+<li>Risks and opportunities that are not in the number, with owners.</li>
+<li>Forecast accuracy and bias, so leaders know how much to trust the view.</li>
+</ul>
+<h2>Avoid the common traps</h2>
+<ul>
+<li><b>Forecasting to the target.</b> If the forecast always lands on the budget, it is not a forecast.</li>
+<li><b>Too much detail.</b> Every extra line is a line someone must update and defend each month.</li>
+<li><b>No version control.</b> If you cannot see what changed since last month and why, you cannot learn from it.</li>
+<li><b>No link to accuracy.</b> Measure error and bias at the level where decisions are made. I describe this in more depth in <a href="finance-role-in-forecast-accuracy.html">forecast accuracy is a finance job</a>.</li>
+</ul>
 <h2>Make it a commercial conversation</h2>
 <p>The best forecasts come from sales, marketing, supply and finance agreeing on one view. Finance should lead the process, but cannot own every assumption alone.</p>
 <p>AI will increasingly help here, by producing a statistical baseline and running scenarios quickly. That makes this conversation better, because the team can spend its time on what the model cannot know.</p>

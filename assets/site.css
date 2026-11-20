@@ -146,6 +146,11 @@ a.card:hover,.card.lift:hover{transform:translateY(-4px);box-shadow:0 16px 34px 
 .post:hover h3{color:var(--accent-ink)}
 .post .cat{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
 .post .meta{font-size:.82rem;color:var(--muted);margin-top:auto;padding-top:14px}
+.post .thumb{position:relative;display:block;margin:-24px -26px 18px;aspect-ratio:16/9;overflow:hidden;border-radius:3px 3px 0 0;background:var(--navy)}
+.post .thumb img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.post:hover .thumb img{transform:scale(1.04)}
+.post .feat{position:absolute;left:12px;top:12px;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--flag-ink);background:var(--flag);padding:3px 8px;border-radius:3px}
+.featured .post.big h3{font-size:1.35rem}.featured{margin-bottom:8px}
 .feature{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:0;padding:0;overflow:hidden;margin-bottom:18px}
 .feature .tx{padding:30px 32px;display:flex;flex-direction:column}.feature h3{font-size:1.65rem}
 .feature img{width:100%;height:100%;object-fit:cover;object-position:left top}

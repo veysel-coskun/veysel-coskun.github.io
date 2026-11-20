@@ -30,7 +30,7 @@
 <body>
 <header class="site-head"><div class="wrap"><a class="brand" href="../index.html">Veysel Coşkun</a><nav class="site-nav" aria-label="Main"><a href="../index.html">Home</a><a href="../experience.html">Experience</a><a href="../index.html#ai">AI in Finance</a><a href="../insights/index.html" aria-current="page">Insights</a><a href="../podcast.html">Podcast</a><a href="../templates.html">Templates</a><a href="../resources.html">Resources</a><a href="../contact.html">Contact</a><a class="cta" href="../demo/emea-cockpit.html">Live dashboard</a></nav></div></header>
 <main>
-<div class="page-head"><div class="wrap"><p class="eyebrow">Controls · 19 May 2026 · 2 min read</p><h1>AI in finance needs controls too</h1><p>The discipline that keeps a month-end close reliable applies directly to AI.</p></div></div>
+<div class="page-head"><div class="wrap"><p class="eyebrow">Controls · 19 May 2026 · 5 min read</p><h1>AI in finance needs controls too</h1><p>The discipline that keeps a month-end close reliable applies directly to AI.</p></div></div>
 <article class="art">
 <p>I have spent much of my career around SOX-compliant controls, under US GAAP and IFRS, across many entities and markets. When finance teams begin using AI, I find that mindset carries over well. You do not need to invent a new way of thinking. You need to ask the questions a good controller already asks.</p>
 <p>Formal guidance now points the same way. In February 2026 COSO published <a href="https://www.coso.org/generative-ai">Achieving Effective Internal Control Over Generative AI</a>, which applies its Internal Control framework to generative AI. Here are five questions I would put to any AI use in a finance process. This is a working view from practice, not compliance advice, so involve your own compliance and audit teams early.</p>
@@ -44,6 +44,49 @@
 <p>A prompt that drives a monthly process is part of that process. If someone changes it, or the underlying model is updated, the output can change. Keep prompts under version control and re-test after a change, as you would with a report or a system configuration.</p>
 <h2>5. Evidence: could you show an auditor?</h2>
 <p>If AI contributed to a reported figure or a management decision, you should be able to show what went in, what came out and who approved it. If that record would be hard to produce, the process is not ready yet.</p>
+<h2>From questions to a control matrix</h2>
+<p>Each of the five questions maps onto a familiar control. Written as a simple matrix, they become something a team can apply and an auditor can test.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Question</th><th>Risk</th><th>Control</th><th>Evidence</th></tr></thead><tbody>
+<tr><td><b>Source</b></td><td>Figures that cannot be traced</td><td>Outputs cite the report or system behind each number</td><td>Source references kept with the output</td></tr>
+<tr><td><b>Review</b></td><td>Errors reach a decision maker</td><td>A named reviewer checks figures before use</td><td>Review sign-off</td></tr>
+<tr><td><b>Access</b></td><td>Confidential data in the wrong tool</td><td>Approved tools for each class of data</td><td>Tool and data register</td></tr>
+<tr><td><b>Change</b></td><td>Output changes without anyone noticing</td><td>Prompts under version control, re-tested after changes</td><td>Change log and test results</td></tr>
+<tr><td><b>Evidence</b></td><td>No audit trail</td><td>Inputs, outputs and approvals retained</td><td>Retained records</td></tr>
+</tbody></table></div>
+<h2>Not every use needs the same control</h2>
+<p>Applying the strictest controls to every use of AI would stop adoption. A simple tiering, based on what the output is used for, keeps effort in proportion to risk.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Tier</th><th>Examples</th><th>Review</th><th>Records</th></tr></thead><tbody>
+<tr><td><b>Low</b></td><td>Drafting an internal email, summarising a public article</td><td>The user checks the result</td><td>None beyond normal practice</td></tr>
+<tr><td><b>Medium</b></td><td>First-draft variance commentary, analysis for management</td><td>A reviewer checks every figure against the source</td><td>Source references and reviewer</td></tr>
+<tr><td><b>High</b></td><td>Inputs to reported figures, accrual estimates, external disclosures</td><td>Formal review and documented approval</td><td>Full inputs, outputs, approvals and change history</td></tr>
+</tbody></table></div>
+<h2>How this fits the controls you already have</h2>
+<p>Most companies do not need a separate framework for AI. The existing ones stretch to cover it. An AI tool used in a financial process is, in control terms, another application: it needs the same access controls, the same change management and the same evidence of review as any spreadsheet or system that touches reported numbers. Treating it that way has a practical advantage. Auditors, process owners and IT teams already understand those controls, so adoption is faster and the conversation starts from familiar ground.</p>
+<h2>Who does what</h2>
+<p>Controls fail most often at the hand-offs between teams. Being explicit about roles avoids the gap where everyone assumes someone else checked.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Role</th><th>Responsibility</th></tr></thead><tbody>
+<tr><td><b>Process owner</b></td><td>Decides where AI is used in the process, and owns the result as with any other step</td></tr>
+<tr><td><b>Reviewer</b></td><td>Checks outputs at the level the tier requires, and signs off</td></tr>
+<tr><td><b>IT and security</b></td><td>Approves tools, manages access, and confirms how data is handled</td></tr>
+<tr><td><b>Compliance and legal</b></td><td>Advise on regulation, such as data protection and the EU AI Act, and on contracts</td></tr>
+<tr><td><b>Internal audit</b></td><td>Tests that the controls work in practice, not only on paper</td></tr>
+</tbody></table></div>
+<h2>Red flags to watch for</h2>
+<ul>
+<li>Numbers in a pack that nobody can trace to a system.</li>
+<li>A personal AI account used for company data, because the approved tool is slower.</li>
+<li>A prompt that "everyone uses" but nobody owns.</li>
+<li>Outputs that changed after a tool update, and nobody noticed until a reviewer asked.</li>
+<li>Review that has quietly become a glance, because the tool is usually right.</li>
+</ul>
+<p>The last one is the hardest. The better a tool performs, the more tempting it becomes to stop checking it. A good control environment makes review a habit, not a reaction to a mistake.</p>
+<h2>A 30-day start</h2>
+<ol>
+<li><b>Week 1:</b> list where AI is already being used in the finance team. The answer is usually "more than we thought".</li>
+<li><b>Week 2:</b> place each use in a tier, and agree which tools are approved for which data.</li>
+<li><b>Week 3:</b> write a one-page standard covering the five questions, and add AI uses to the existing control framework.</li>
+<li><b>Week 4:</b> train the team, then spot-check a sample of medium and high-tier outputs.</li>
+</ol>
 <p>None of this should slow a team down. Clear rules usually help people adopt new tools with more confidence, because everyone knows what is allowed and who is accountable. In my experience that is what a good control environment does for any change.</p>
 <aside class="further"><h2>Further reading and watching</h2><ul><li><a href="https://www.coso.org/generative-ai">COSO: Achieving Effective Internal Control Over Generative AI</a></li><li><a href="https://www.journalofaccountancy.com/news/2026/feb/coso-creates-audit-ready-guidance-for-governing-generative-ai/">Journal of Accountancy: COSO guidance on generative AI</a></li><li><a href="https://internalauditor.theiia.org/en/articles/2026/march/coso-issues-genai-guidance/">The IIA: COSO issues generative AI guidance</a></li><li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a></li><li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">EU AI Act</a></li><li><a href="../podcast.html#coso-erm-ethics">Listen: COSO ERM and IMA Professional Ethics</a> (Margin Notes, 61 min)</li></ul></aside>
 <p class="pn"><a href="a-starter-prompt-kit-for-finance-teams.html">Newer: A starter prompt kit for finance teams</a><a href="master-data-is-your-first-ai-project.html">Older: Master data is your first AI project</a></p><p class="pn" style="border:none;margin-top:0;padding-top:0"><a href="index.html">All insights</a></p></article>

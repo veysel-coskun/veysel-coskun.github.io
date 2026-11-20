@@ -30,7 +30,7 @@
 <body>
 <header class="site-head"><div class="wrap"><a class="brand" href="../index.html">Veysel Coşkun</a><nav class="site-nav" aria-label="Main"><a href="../index.html">Home</a><a href="../experience.html">Experience</a><a href="../index.html#ai">AI in Finance</a><a href="../insights/index.html" aria-current="page">Insights</a><a href="../podcast.html">Podcast</a><a href="../templates.html">Templates</a><a href="../resources.html">Resources</a><a href="../contact.html">Contact</a><a class="cta" href="../demo/emea-cockpit.html">Live dashboard</a></nav></div></header>
 <main>
-<div class="page-head"><div class="wrap"><p class="eyebrow">AI in Finance · 21 April 2026 · 2 min read</p><h1>Master data is your first AI project</h1><p>Before asking AI for insight, make sure your customers, SKUs and prices mean the same thing everywhere.</p></div></div>
+<div class="page-head"><div class="wrap"><p class="eyebrow">AI in Finance · 21 April 2026 · 5 min read</p><h1>Master data is your first AI project</h1><p>Before asking AI for insight, make sure your customers, SKUs and prices mean the same thing everywhere.</p></div></div>
 <article class="art">
 <p>When I helped build a finance function from a blank page across more than 20 markets, some of the most important decisions were also the least glamorous: the chart of accounts, the cost centre structure, the reporting hierarchies, and who owned customer, vendor, SKU, pricing and costing data.</p>
 <p>None of that looks like an AI project, yet it decides whether one will work.</p>
@@ -43,6 +43,42 @@
 <li><b>Do definitions match?</b> Gross sales, allowances and variable margin must mean the same thing in every market. Otherwise a comparison mixes a real change with a change of method.</li>
 <li><b>Can you tie back?</b> Every dashboard total should reconcile to the ledger. If it does not, fix that before adding any layer on top.</li>
 </ol>
+<h2>What weak master data looks like</h2>
+<p>The problems are rarely dramatic. They are small inconsistencies that add up. The example below is illustrative, but every finance team will recognise the pattern.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Record</th><th>Problem</th><th>What it does to analysis</th></tr></thead><tbody>
+<tr><td>"Retailer Alpha BV", "RETAILER ALPHA B.V." and "Alpha Retail NL"</td><td>One customer, three records</td><td>Customer profitability is split three ways, and none of the three looks important</td></tr>
+<tr><td>A SKU mapped to one brand in sales reporting and another in costing</td><td>Two hierarchies</td><td>Brand margin moves when nothing in the business changed</td></tr>
+<tr><td>A price list with last year's price still active</td><td>No end date on prices</td><td>Invoices and forecasts use different prices for the same product</td></tr>
+<tr><td>A vendor with two payment terms in two systems</td><td>No single owner</td><td>Cash forecasts and supplier payments disagree</td></tr>
+</tbody></table></div>
+<h2>Who owns what</h2>
+<p>Ownership is the control that makes all the others work. A practical split looks like this, though the names of the teams will vary.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Data</th><th>Owner</th><th>Approver</th><th>Key fields to control</th></tr></thead><tbody>
+<tr><td><b>Customer</b></td><td>Sales operations</td><td>Finance (credit)</td><td>Legal entity, channel, payment terms, credit limit</td></tr>
+<tr><td><b>Vendor</b></td><td>Procurement</td><td>Finance (payments)</td><td>Bank details, payment terms, tax data</td></tr>
+<tr><td><b>SKU</b></td><td>Product or supply team</td><td>Finance (costing)</td><td>Brand, category, unit of measure, status</td></tr>
+<tr><td><b>Price</b></td><td>Commercial team</td><td>Finance (pricing governance)</td><td>List price, validity dates, currency</td></tr>
+<tr><td><b>Cost</b></td><td>Finance (costing)</td><td>Controller</td><td>Standard cost, landed cost components, update dates</td></tr>
+</tbody></table></div>
+<h2>Measure data quality like any other KPI</h2>
+<ul>
+<li><b>Completeness:</b> the share of records with every mandatory field filled.</li>
+<li><b>Duplicates:</b> the number of suspected duplicate customers, vendors and SKUs.</li>
+<li><b>Timeliness:</b> how long a change request takes from request to approval.</li>
+<li><b>Reconciliation:</b> whether dashboard totals tie to the ledger every month.</li>
+</ul>
+<p>Report these monthly to the same people who receive the financial results. Data quality improves fastest when its owners can see it.</p>
+<h2>Making the business case</h2>
+<p>Master data work is hard to fund because its benefit is indirect. The way to make the case is to show its cost in terms leaders already care about. How many hours does the team spend each month reconciling reports that should agree? How often has a customer's profitability been wrong because its sales were split across records? How many invoices were issued at an expired price? Each of these has a number, and together they usually justify the work many times over. Add the AI argument on top: the better the data, the more of the analysis can be trusted to automated tools, and the faster the team can answer new questions.</p>
+<h2>Where AI can help with the data itself</h2>
+<p>There is a useful twist here. The same tools that need clean data are good at helping to clean it. Language models are well suited to suggesting which customer records are probably duplicates, proposing a brand or category for a new SKU from its description, and flagging prices whose validity dates overlap. The rule is the same as anywhere else in finance: AI suggests, the data owner approves, and every change is logged.</p>
+<h2>A four-week plan for one question</h2>
+<div class="dflow">
+<div class="dstep"><span class="dn">1</span><div><p class="dq">Week 1: choose the question</p><p>Pick one valuable, recurring question, such as margin by brand and market, and list every data set the answer depends on.</p></div></div>
+<div class="dstep"><span class="dn">2</span><div><p class="dq">Week 2: find the gaps</p><p>Check duplicates, missing fields and mismatched hierarchies in those data sets only. Ignore everything else for now.</p></div></div>
+<div class="dstep"><span class="dn">3</span><div><p class="dq">Week 3: fix and assign owners</p><p>Clean the records, agree the definitions, and give each data set a named owner and a change process.</p></div></div>
+<div class="dstep"><span class="dn">4</span><div><p class="dq">Week 4: answer and reconcile</p><p>Produce the answer, reconcile it to the ledger, and show the business what changed because the data was fixed.</p></div></div>
+</div>
 <h2>Start small</h2>
 <p>A company does not need perfect data everywhere before it starts. Pick one valuable question, such as margin by brand and market, and clean the data behind that answer. You get a useful result quickly, and you show the business why the groundwork matters.</p>
 <p>This is the less exciting side of AI in finance, but it is often what separates a good demonstration from a tool people trust every month. Teams that invest in structure now will get far more from AI later.</p>

@@ -30,7 +30,7 @@
 <body>
 <header class="site-head"><div class="wrap"><a class="brand" href="../index.html">Veysel Coşkun</a><nav class="site-nav" aria-label="Main"><a href="../index.html">Home</a><a href="../experience.html">Experience</a><a href="../index.html#ai">AI in Finance</a><a href="../insights/index.html" aria-current="page">Insights</a><a href="../podcast.html">Podcast</a><a href="../templates.html">Templates</a><a href="../resources.html">Resources</a><a href="../contact.html">Contact</a><a class="cta" href="../demo/emea-cockpit.html">Live dashboard</a></nav></div></header>
 <main>
-<div class="page-head"><div class="wrap"><p class="eyebrow">AI in Finance · 23 June 2026 · 2 min read</p><h1>A starter prompt kit for finance teams</h1><p>Five reusable prompts for common finance work, and the habits that keep them safe.</p></div></div>
+<div class="page-head"><div class="wrap"><p class="eyebrow">AI in Finance · 23 June 2026 · 5 min read</p><h1>A starter prompt kit for finance teams</h1><p>Five reusable prompts for common finance work, and the habits that keep them safe.</p></div></div>
 <article class="art">
 <p>The most useful AI habit I have seen in finance is simple: write down a good prompt once and reuse it. A shared prompt turns a personal trick into a team process. These five patterns are a good place to start. Use them only with data your company has approved for that tool.</p>
 <h2>1. First-draft variance commentary</h2>
@@ -43,6 +43,42 @@
 <p><i>"Rewrite this finance note for a sales director with no accounting background. Keep every number. Explain each finance term in plain words the first time it appears."</i></p>
 <h2>5. Check the logic</h2>
 <p><i>"Review this bridge. Confirm that the steps add up to the total change. Flag any step whose label does not match its calculation, and any figure that looks inconsistent."</i></p>
+<h2>The anatomy of a good finance prompt</h2>
+<p>The five prompts above share a structure. Once you can see it, you can write a reliable prompt for almost any finance task.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Part</th><th>What it does</th><th>Example</th></tr></thead><tbody>
+<tr><td><b>Role</b></td><td>Sets the point of view</td><td>"Act as a commercial finance analyst."</td></tr>
+<tr><td><b>Task</b></td><td>Says what to produce</td><td>"Write a three-sentence summary of the variance."</td></tr>
+<tr><td><b>Audience</b></td><td>Sets tone and detail</td><td>"For a regional sales director."</td></tr>
+<tr><td><b>Input</b></td><td>Defines the only data to use</td><td>"Use only the table below."</td></tr>
+<tr><td><b>Rules</b></td><td>Sets limits</td><td>"Do not estimate figures. Say what you cannot explain."</td></tr>
+<tr><td><b>Output</b></td><td>Fixes the format</td><td>"Three sentences, then a list of open questions."</td></tr>
+</tbody></table></div>
+<div class="keys"><p class="keys-h">Putting it together</p><p>"Act as a commercial finance analyst. Write a three-sentence summary of the variance between actuals and forecast for a regional sales director. Use only the table below. Name the two largest drivers with their size, do not estimate any figure that is not in the table, and list anything you cannot explain. Then give three questions the director is likely to ask."</p></div>
+<h2>Three more prompts worth keeping</h2>
+<p><b>6. Explain a reconciliation.</b> "Here are two reports that should agree, and the difference between them. List the possible causes in order of likelihood, and say which data would confirm or rule out each one."</p>
+<p><b>7. Prepare for a meeting.</b> "Here is the pack for tomorrow's business review. List the ten questions a sceptical general manager is most likely to ask, and the page or figure that answers each one."</p>
+<p><b>8. Check a policy.</b> "Answer the question below using only this policy text. Quote the clause you rely on, and say clearly if the policy does not cover the question."</p>
+<h2>How AI output goes wrong, and how to catch it</h2>
+<p>Most errors in AI-drafted finance work fall into a few recognisable patterns. Knowing them makes review faster, because the reviewer knows where to look first.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Failure</th><th>What it looks like</th><th>How to catch it</th></tr></thead><tbody>
+<tr><td><b>Invented figures</b></td><td>A plausible number that is not in the source</td><td>Tie every number in the text back to the table</td></tr>
+<tr><td><b>Wrong sign</b></td><td>A favourable variance described as unfavourable</td><td>Check direction words against the sign convention</td></tr>
+<tr><td><b>Invented causes</b></td><td>"Driven by weaker consumer demand" when the data shows only the number</td><td>Ask for the evidence behind each explanation</td></tr>
+<tr><td><b>Stale context</b></td><td>Last month's story applied to this month's numbers</td><td>Give the current data every time, and say which period it is</td></tr>
+<tr><td><b>False precision</b></td><td>"Revenue will rise 3.47%" from a rough estimate</td><td>Ask for ranges, and round to what the data supports</td></tr>
+</tbody></table></div>
+<p>A useful routine for every AI draft is the same as for a new analyst's work: check that the totals tie, trace three numbers at random, and read every "because" in the text. If any of those fail, send it back.</p>
+<h2>Match the tool to the job</h2>
+<p>Not every finance task belongs in a chat window. A general AI assistant is good at drafting, summarising, explaining and checking logic. A spreadsheet or a BI tool is still the right place for calculations that must be repeatable and auditable. The most effective pattern I have seen combines them: the numbers are calculated in a governed tool, and the AI works on the output, turning a table into a story or a story into questions. When an AI tool does calculate, ask it to show the formula, and check the result in the spreadsheet before it goes anywhere.</p>
+<h2>Build a team library</h2>
+<p>A prompt that works should not live in one person's chat history. A simple shared library, kept like any other finance template, turns individual skill into team capability. For each prompt, record:</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Field</th><th>Why it matters</th></tr></thead><tbody>
+<tr><td><b>Name and purpose</b></td><td>So people can find the right prompt quickly</td></tr>
+<tr><td><b>Owner</b></td><td>Someone who keeps it working and answers questions</td></tr>
+<tr><td><b>Approved tools</b></td><td>Which AI tools it may be used with</td></tr>
+<tr><td><b>Data allowed</b></td><td>Which classes of data may be pasted in</td></tr>
+<tr><td><b>Version and last tested</b></td><td>So a change in the prompt or the model is noticed</td></tr>
+</tbody></table></div>
 <h2>Four habits that matter more than the wording</h2>
 <ul>
 <li><b>Give it the source.</b> Paste the data and tell it to use only that data.</li>

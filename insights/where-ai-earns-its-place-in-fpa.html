@@ -30,7 +30,7 @@
 <body>
 <header class="site-head"><div class="wrap"><a class="brand" href="../index.html">Veysel Coşkun</a><nav class="site-nav" aria-label="Main"><a href="../index.html">Home</a><a href="../experience.html">Experience</a><a href="../index.html#ai">AI in Finance</a><a href="../insights/index.html" aria-current="page">Insights</a><a href="../podcast.html">Podcast</a><a href="../templates.html">Templates</a><a href="../resources.html">Resources</a><a href="../contact.html">Contact</a><a class="cta" href="../demo/emea-cockpit.html">Live dashboard</a></nav></div></header>
 <main>
-<div class="page-head"><div class="wrap"><p class="eyebrow">AI in Finance · 24 March 2026 · 2 min read</p><h1>Where AI earns its place in FP&amp;A</h1><p>Start with the finance cycle, then apply three simple tests before automating anything.</p></div></div>
+<div class="page-head"><div class="wrap"><p class="eyebrow">AI in Finance · 24 March 2026 · 5 min read</p><h1>Where AI earns its place in FP&amp;A</h1><p>Start with the finance cycle, then apply three simple tests before automating anything.</p></div></div>
 <article class="art">
 <p>Finance teams live by a cycle: close the month, report it, update the forecast, support a decision, then do it all again. When people ask where AI fits, I start with that cycle, because it shows where the hours go and where a mistake would hurt.</p>
 <p>Most of the effort sits in preparation. Someone collects files from several markets, aligns them to one structure, checks that they tie, and writes the first draft of what changed. That work matters, but it is also the part a well-supervised tool can speed up. The conversation with the business is where finance creates value, and it usually gets whatever time is left.</p>
@@ -43,6 +43,39 @@
 </ol>
 <h2>Where I would start</h2>
 <p>Three uses tend to pass all three tests. The first is commentary drafting: turning a variance table into a first version of the story for a monthly review. The second is scenario preparation: laying out what a price, allowance or cost change would do to the P&amp;L before the meeting starts. The third is exception screening: highlighting the lines that moved outside their normal range, so reviewers look in the right place first.</p>
+<h2>Scoring the finance cycle</h2>
+<p>Applying the three tests to the main tasks of a monthly cycle gives a clear picture of where to start. "Partly" usually means the task can be split: AI prepares, a person decides.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Task</th><th>Repeatable?</th><th>Checkable?</th><th>Clear owner?</th><th>Approach</th></tr></thead><tbody>
+<tr><td>Consolidating market files</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Automate, with reconciliation checks</td></tr>
+<tr><td>First-draft variance commentary</td><td>Yes</td><td>Yes</td><td>Yes</td><td>AI drafts, analyst edits</td></tr>
+<tr><td>Scenario preparation</td><td>Yes</td><td>Yes</td><td>Yes</td><td>AI builds, finance reviews assumptions</td></tr>
+<tr><td>Exception screening</td><td>Yes</td><td>Yes</td><td>Yes</td><td>AI flags, reviewer investigates</td></tr>
+<tr><td>Forecast assumptions</td><td>Partly</td><td>Partly</td><td>Yes</td><td>AI gives a baseline, people set the assumptions</td></tr>
+<tr><td>Accrual judgements</td><td>Partly</td><td>No</td><td>Yes</td><td>Human-led, AI gathers evidence</td></tr>
+<tr><td>External reporting text</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Human-led because of the stakes, AI checks consistency</td></tr>
+</tbody></table></div>
+<h2>How to tell whether it worked</h2>
+<p>Measure before and after, or the benefit will be argued about forever. Four simple measures are enough:</p>
+<ul>
+<li><b>Hours per cycle</b> spent on preparation, by task.</li>
+<li><b>Days from close to pack</b>, from the ledger closing to the review meeting.</li>
+<li><b>Review findings</b>: errors caught per pack, to make sure speed has not cost quality.</li>
+<li><b>Time with the business</b>: the share of the cycle spent discussing results rather than producing them.</li>
+</ul>
+<p>The last measure is the one that matters. If AI saves time but the time goes into more reports, nothing has really changed.</p>
+<h2>A worked example: commentary drafting</h2>
+<p>To make this concrete, here is how a first-draft commentary process can work in a monthly cycle. The variance table is produced from the reporting system as usual, with actuals, forecast and prior year by market and line. An approved AI tool receives only that table and a standard prompt, and drafts a short summary for each market: the headline, the two largest drivers with their size, and anything the data cannot explain. A finance analyst then edits each draft, adds the context that only people know, such as a delayed shipment or a customer negotiation, and confirms every figure. The reviewer signs off as before.</p>
+<p>The time saving comes from the blank page, not from the judgement. Analysts start from a draft that is mostly right, so their time goes on what is missing. In my experience that is where the real explanation usually sits anyway.</p>
+<h2>What changes for the team</h2>
+<p>When preparation gets faster, the shape of the FP&amp;A role changes. The analyst who spent three days building a pack now spends that time explaining it and challenging it. That needs different strengths, and it is worth being deliberate about them.</p>
+<div class="tbl"><table class="dt"><thead><tr><th>Skill</th><th>Why it matters more with AI</th></tr></thead><tbody>
+<tr><td><b>Asking good questions</b></td><td>The quality of an AI answer depends on the quality of the question</td></tr>
+<tr><td><b>Reviewing critically</b></td><td>Drafts arrive fast and look polished, so errors are easier to miss</td></tr>
+<tr><td><b>Understanding the business</b></td><td>The model knows the numbers; the analyst knows what a customer said last week</td></tr>
+<tr><td><b>Explaining clearly</b></td><td>More time with the business means more time persuading people</td></tr>
+<tr><td><b>Data discipline</b></td><td>Clean, well-defined data is what makes every tool reliable</td></tr>
+</tbody></table></div>
+<p>A sensible way to start is a pilot on one task, in one cycle, with one team. Measure the time before, agree the review steps, run it for two or three months and then decide whether to extend it. Small, measured pilots build more confidence than a large programme announced in advance.</p>
 <h2>Where I would be careful</h2>
 <p>Forecast assumptions, accrual judgements and anything that goes into external reporting need a human decision. AI can bring the evidence together, but those calls depend on context a model does not have, such as what a customer said last week or a promotion that is about to change.</p>
 <p>The aim is a better use of finance time. If AI gives a team two extra days each cycle, those days should go to the discussion with commercial leaders about what the numbers mean and what to do next.</p>
