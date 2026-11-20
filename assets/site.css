@@ -204,6 +204,12 @@ a.card:hover,.card.lift:hover{transform:translateY(-4px);box-shadow:0 16px 34px 
 .dt th{text-align:left;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--navy);padding:8px 10px 8px 0}
 .dt td{border-bottom:1px solid var(--hair);padding:9px 10px 9px 0;vertical-align:top}
 .dt .n{text-align:right;white-space:nowrap}
+.dflow{display:grid;gap:10px;font-size:.92rem;line-height:1.5}
+.dstep{display:grid;grid-template-columns:34px minmax(0,1fr);gap:14px;padding:14px 16px;border:1px solid var(--hair-strong);border-radius:6px;background:var(--surface);position:relative}
+.dstep+.dstep::before{content:"";position:absolute;left:32px;top:-11px;height:10px;border-left:2px solid var(--accent)}
+.dstep p{margin:0}.art .dq{font:600 1rem var(--sans);color:var(--ink);margin-bottom:4px}
+.dstep .dno{margin-top:6px;color:var(--accent-ink)}
+.dn{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:600}
 .dt.pl td{padding-top:6px;padding-bottom:6px}
 .dt.pl td:first-child{min-width:150px}.dt.pl th.n{white-space:normal}
 .flow3{display:grid;grid-template-columns:minmax(0,1fr) 78px minmax(0,1.12fr) 78px minmax(0,1fr);font-size:.86rem;line-height:1.45}
